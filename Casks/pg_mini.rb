@@ -3,7 +3,7 @@ cask "pg_mini" do
   name "pg_mini"
   desc "Create consistent, partial backups of PostgreSQL databases"
   homepage "https://github.com/fritzkeyzer/pg_mini"
-  version "0.1.4"
+  version "0.1.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "pg_mini" do
   on_macos do
     on_intel do
       url "https://github.com/fritzkeyzer/pg_mini/releases/download/v#{version}/pg_mini_#{version}_darwin_amd64.tar.gz"
-      sha256 "5de661e46081d70d1e0dc67260e1cf6ceff490a2f64eade9e916bc389a20fb59"
+      sha256 "ea78da126aa65e03bc06670c675c1f709f1922cb712af2593c4ce9188025cd98"
     end
     on_arm do
       url "https://github.com/fritzkeyzer/pg_mini/releases/download/v#{version}/pg_mini_#{version}_darwin_arm64.tar.gz"
-      sha256 "961587f0d6d533708f5dbe4f3db4378fad347c8b5c466006c13e1c326bd89350"
+      sha256 "471ce0df843a9e49244e7f9b47ff2867edf6da3d35a857897ea7eb498177935f"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/fritzkeyzer/pg_mini/releases/download/v#{version}/pg_mini_#{version}_linux_amd64.tar.gz"
-      sha256 "f46ed10724f42861bff1338460cacfb354567bfbfcbefb1070064523cb68d734"
+      sha256 "0aa5624c3c4de014cd15d930187495b22a8883cbdf6e181492003c748712029d"
     end
     on_arm do
       url "https://github.com/fritzkeyzer/pg_mini/releases/download/v#{version}/pg_mini_#{version}_linux_arm64.tar.gz"
-      sha256 "d9be8baf1cffc64a4a0431ebfba530346ff72c65e77eb0e70674f1e6aa2ff417"
+      sha256 "7ceb21eaa2e804653b194d842505af44d13617163b7f1c1f675a2edb8cbb8b43"
     end
   end
 
